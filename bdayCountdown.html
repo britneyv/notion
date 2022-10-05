@@ -8,7 +8,18 @@
 
     <title>Birthday Countdown</title>
     <style>
-    
+
+        .full-table {
+            display: table;
+            height: 100%;
+            width: 100%;
+        }
+
+        .table-cell {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
         .card {
     		padding: 10px 25px 10px 25px;
     		border-radius: 10px;
@@ -39,16 +50,18 @@
 </head>
 <body>
 
-<p id="demo"></p>
-
-<div class="card">
-    <div class="text"> Birthday </div>
-        <div class="countdown" id="mons"></div>
-        <div class="countdown" id="days"></div>
-        <div class="countdown" id="hour"></div>
-        <div class="countdown" id="min"></div>
-        <div class="countdown" id="sec"></div>
-</div>
+    <div class="full-table">
+        <div class="table-cell">
+            <div class="card">
+                <div class="text"> Birthday </div>
+                <div class="countdown" id="mons"></div>
+                <div class="countdown" id="days"></div>
+                <div class="countdown" id="hour"></div>
+                <div class="countdown" id="min"></div>
+                <div class="countdown" id="sec"></div>
+            </div>
+        </div>
+    </div>
 
 <script>
 // Set the date we're counting down to
